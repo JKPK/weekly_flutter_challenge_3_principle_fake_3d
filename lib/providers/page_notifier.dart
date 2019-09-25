@@ -20,7 +20,7 @@ class PageNotifier with ChangeNotifier {
   void animateToPage(int page) {
     _pageController.animateToPage(
       1,
-      duration: Duration(seconds: 1),
+      duration: Duration(milliseconds: 1500),
       curve: Curves.fastOutSlowIn,
     );
   }

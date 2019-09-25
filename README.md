@@ -9,6 +9,9 @@
 4. Using [MultiProvider](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple#changenotifierprovider) and  [ChangeNotifierProvider](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple#changenotifierprovider) from [Privider](https://pub.dev/packages/provider) package. Along with creating custom ChangeNotifier.
 * And accessing it by using ```Consumer<MyCustomNotifier>```.
 * And also accessing it by using ```Provider.of<MyCustomNotifier>(context)```.
+5. Modifying TextStyle by using ```.copyWith()``` method.
+6. [Adding shadow to a TextStyle](https://owenhalliday.co.uk/shadows/).
+
 
 ## Credits
 [Front mountain photo](https://unsplash.com/photos/Sa7787z58VQ) by [Marco Bonomo](https://unsplash.com/@radel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
