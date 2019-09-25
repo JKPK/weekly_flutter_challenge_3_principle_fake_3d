@@ -2,9 +2,10 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
 import '../providers/page_notifier.dart';
 
-class UpButton extends StatelessWidget {
+class MountainUpButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Positioned(
@@ -30,15 +31,20 @@ class UpButton extends StatelessWidget {
                               MediaQuery.of(context).size.height),
                 ),
               ),
-              child: child,
+              child: Icon(
+                Icons.keyboard_arrow_up,
+                color: Colors.white.withOpacity(
+                  math.max(
+                      0,
+                      1 -
+                          pageNotifier.offset /
+                              MediaQuery.of(context).size.height),
+                ),
+                size: 50,
+              ),
             ),
           );
         },
-        child: Icon(
-          Icons.keyboard_arrow_up,
-          color: Colors.white,
-          size: 50,
-        ),
       ),
     );
   }
