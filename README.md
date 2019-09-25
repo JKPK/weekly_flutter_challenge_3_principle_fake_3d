@@ -6,8 +6,10 @@
 * changing [scrollDirection](https://medium.com/flutter-community/a-deep-dive-into-pageview-in-flutter-with-custom-transitions-581d9ea6dded)
 * manually strolling to a given page
 3. Using [GestureDetector](https://flutter.dev/docs/cookbook/gestures/handling-taps) to make a Widget tappable.
-4. Using [ChangeNotifierProvider](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple#changenotifierprovider) from [Privider](https://pub.dev/packages/provider) package. ALong with creating custom ChangeNotifier.
- 
+4. Using [MultiProvider](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple#changenotifierprovider) and  [ChangeNotifierProvider](https://flutter.dev/docs/development/data-and-backend/state-mgmt/simple#changenotifierprovider) from [Privider](https://pub.dev/packages/provider) package. Along with creating custom ChangeNotifier.
+* And accessing it by using ```Consumer<MyCustomNotifier>```.
+* And also accessing it by using ```Provider.of<MyCustomNotifier>(context)```.
+
 ## Credits
 [Front mountain photo](https://unsplash.com/photos/Sa7787z58VQ) by [Marco Bonomo](https://unsplash.com/@radel?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 

@@ -7,9 +7,6 @@ import '../widgets/mountain_front.dart';
 import '../widgets/up_button.dart';
 
 class MountainsImagePage extends StatelessWidget {
-  final PageController _pageController;
-  MountainsImagePage(this._pageController);
-
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -22,7 +19,7 @@ class MountainsImagePage extends StatelessWidget {
         MountainBack(),
         MountainFiller(),
         MountainFront(),
-        UpButton(_pageController),
+        UpButton(),
       ],
     );
   }

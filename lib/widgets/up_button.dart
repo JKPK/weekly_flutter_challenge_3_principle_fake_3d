@@ -2,25 +2,19 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../pages/mountains_page.dart';
+import '../providers/page_notifier.dart';
 
 class UpButton extends StatelessWidget {
-  final PageController _pageController;
-  UpButton(this._pageController);
   @override
   Widget build(BuildContext context) {
     return Positioned(
       bottom: 50,
       width: MediaQuery.of(context).size.width,
-      child: Consumer<MyPageNotifier>(
+      child: Consumer<PageNotifier>(
         builder: (context, pageNotifier, child) {
           return GestureDetector(
             onTap: () {
-              _pageController.animateToPage(
-                1,
-                duration: Duration(seconds: 1),
-                curve: Curves.fastOutSlowIn,
-              );
+              pageNotifier.animateToPage(1);
             },
             child: Container(
               width: MediaQuery.of(context).size.width / 6,
