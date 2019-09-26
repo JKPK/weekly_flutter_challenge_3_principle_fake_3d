@@ -23,7 +23,7 @@ https://dribbble.com/shots/7176005-principle-fake-3D
 [![Original design](https://github.com/JKPK/weekly_flutter_challenge_3_principle_fake_3d/blob/master/original_design.png?raw=true)](https://dribbble.com/shots/7176005-principle-fake-3D)
 
 ## Challenge result
-![Challenge result](https://github.com/JKPK/weekly_flutter_challenge_3_principle_fake_3d/blob/master/challenge_result.png?raw=true)]]
+![Challenge result](https://github.com/JKPK/weekly_flutter_challenge_3_principle_fake_3d/blob/master/challenge_result.png?raw=true)
 
 
 ## Credits
