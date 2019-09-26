@@ -22,8 +22,13 @@ https://dribbble.com/shots/7176005-principle-fake-3D
 ## Original design - click to see video
 [![Original design](https://github.com/JKPK/weekly_flutter_challenge_3_principle_fake_3d/blob/master/original_design.png?raw=true)](https://dribbble.com/shots/7176005-principle-fake-3D)
 
+<<<<<<< HEAD
 ## Challenge result - click to see video
 [![Challenge result](https://github.com/JKPK/weekly_flutter_challenge_3_principle_fake_3d/blob/master/challenge_result.png?raw=true)](https://youtu.be/WURwh-Z2uao)
+=======
+## Challenge result
+![Challenge result](https://github.com/JKPK/weekly_flutter_challenge_3_principle_fake_3d/blob/master/challenge_result.png?raw=true)
+>>>>>>> 170b483dd47f0ef9e01a2e0fbdb69c707a14ecbf
 
 
 ## Credits
