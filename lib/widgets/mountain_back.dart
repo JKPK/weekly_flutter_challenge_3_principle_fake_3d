@@ -4,12 +4,16 @@ import 'package:provider/provider.dart';
 import '../providers/page_notifier.dart';
 
 class MountainBack extends StatelessWidget {
+  final Offset offset;
+
+  MountainBack(this.offset);
+
   @override
   Widget build(BuildContext context) {
     return Consumer<PageNotifier>(
       builder: (context, pageNotifier, child) => Positioned(
-        bottom: 0 + pageNotifier.offset / 10,
-        right: -400,
+        bottom: -offset.dy + pageNotifier.offset / 10,
+        right: -offset.dx - 400,
         child: child,
       ),
       child: Image(

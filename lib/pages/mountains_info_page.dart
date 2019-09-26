@@ -1,14 +1,15 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
+
 import 'package:provider/provider.dart';
-import 'package:weekly_flutter_challenge_3_principle_fake_3d/providers/page_notifier.dart';
 
 import '../styleguide.dart';
 import '../widgets/info_button.dart';
 import '../widgets/info_menu_button.dart';
 import '../widgets/info_title.dart';
 import '../widgets/info_description.dart';
+import '../providers/page_notifier.dart';
 
 class MountainsInfoPage extends StatelessWidget {
   @override

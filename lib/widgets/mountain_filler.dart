@@ -5,6 +5,9 @@ import '../styleguide.dart';
 import '../providers/page_notifier.dart';
 
 class MountainFiller extends StatelessWidget {
+  final Offset offset;
+  MountainFiller(this.offset);
+
   @override
   Widget build(BuildContext context) {
     return Positioned(
@@ -12,7 +15,7 @@ class MountainFiller extends StatelessWidget {
       left: 0,
       child: Consumer<PageNotifier>(
         builder: (context, pageNotifier, child) => Container(
-          height: 105 + pageNotifier.offset / 4,
+          height: -offset.dy + 105 + pageNotifier.offset / 4,
           width: MediaQuery.of(context).size.width,
           color: darkBackground,
           child: null,

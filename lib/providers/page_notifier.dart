@@ -13,8 +13,6 @@ class PageNotifier with ChangeNotifier {
 
   double get offset => _pageController.offset;
 
-  double get page => _pageController.page;
-
   PageController get pageController => _pageController;
 
   void animateToPage(int page) {
@@ -23,5 +21,11 @@ class PageNotifier with ChangeNotifier {
       duration: Duration(milliseconds: 1500),
       curve: Curves.fastOutSlowIn,
     );
+  }
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
   }
 }

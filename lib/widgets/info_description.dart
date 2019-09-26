@@ -18,8 +18,8 @@ class InfoDescription extends StatelessWidget {
           "The Mount Baker–Snoqualmie National Forest in Washington is a National Forest extending more than 140 miles (230 km) along the western slopes of the Cascade Range from the Canada–US border to the northern boundary of Mount Rainier National Park",
           style: descriptionTextStyle.copyWith(
             height: descriptionTextStyle.height +
-                (MediaQuery.of(context).size.height -
-                pageController.offset)/100,
+                (MediaQuery.of(context).size.height - pageController.offset) /
+                    100,
           ),
         ),
       ),

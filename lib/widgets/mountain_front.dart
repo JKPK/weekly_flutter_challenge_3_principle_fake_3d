@@ -4,12 +4,16 @@ import 'package:provider/provider.dart';
 import '../providers/page_notifier.dart';
 
 class MountainFront extends StatelessWidget {
+  final Offset mountainOffset;
+
+  MountainFront(this.mountainOffset);
+
   @override
   Widget build(BuildContext context) {
     return Consumer<PageNotifier>(
       builder: (context, pageNotifier, child) => Positioned(
-        bottom: 100 + pageNotifier.offset / 4,
-        right: -400,
+        bottom: -mountainOffset.dy + 100 + pageNotifier.offset / 4,
+        right: -mountainOffset.dx - 400,
         child: child,
       ),
       child: Image(

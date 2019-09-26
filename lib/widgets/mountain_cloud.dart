@@ -29,7 +29,6 @@ class _MountainCloudState extends State<MountainCloud>
       })
       ..addStatusListener((status) {
         if (status == AnimationStatus.completed) {
-          print("Animatoin completed");
           controller.reset();
           controller.forward();
         }

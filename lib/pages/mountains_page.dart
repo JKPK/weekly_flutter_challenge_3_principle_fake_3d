@@ -13,21 +13,19 @@ class MountainsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setEnabledSystemUIOverlays([]);
 
-    return Material(
-      child: ChangeNotifierProvider(
-        builder: (context) => PageNotifier(),
-        child: Consumer<PageNotifier>(
-          builder: (context, pageNotifier, child) {
-            return PageView(
-              controller: pageNotifier.pageController,
-              scrollDirection: Axis.vertical,
-              children: <Widget>[
-                MountainsImagePage(),
-                MountainsInfoPage(),
-              ],
-            );
-          },
-        ),
+    return ChangeNotifierProvider(
+      builder: (context) => PageNotifier(),
+      child: Consumer<PageNotifier>(
+        builder: (context, pageNotifier, child) {
+          return PageView(
+            controller: pageNotifier.pageController,
+            scrollDirection: Axis.vertical,
+            children: <Widget>[
+              MountainsImagePage(),
+              MountainsInfoPage(),
+            ],
+          );
+        },
       ),
     );
   }

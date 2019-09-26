@@ -11,15 +11,16 @@ class MountainText extends StatelessWidget {
       child: Text(
         "HELLO",
         style: TextStyle(
-            color: Colors.white,
-            fontSize: 110,
-            fontWeight: FontWeight.bold,
-            shadows: [
-              Shadow(
-                blurRadius: 5.0,
-                color: infoBlue,
-              ),
-            ]),
+          color: Colors.white,
+          fontSize: 110,
+          fontWeight: FontWeight.bold,
+          shadows: [
+            Shadow(
+              blurRadius: 5.0,
+              color: infoBlue,
+            ),
+          ],
+        ),
       ),
     );
   }
